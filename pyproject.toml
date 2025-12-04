@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=62", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "product-parser"
+version = "0.1.0"
+description = "A console tool for extracting product information from HTML"
+authors = [
+    {name = "Vitalii Shynkaruk", email = "example@example.com"}
+]
+readme = "README.md"
+requires-python = ">=3.9"
+
+dependencies = [
+    "requests",
+    "beautifulsoup4",
+    "lxml",
+    "markdownify",
+    "langchain-core",
+    "langchain-openai",
+    "pydantic",
+    "python-dotenv",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.scripts]
+parse-product = "product_parser.cli:main"
