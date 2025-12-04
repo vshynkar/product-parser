@@ -1,0 +1,65 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# =========================
+# Virtual Environments
+# =========================
+.venv/
+venv/
+env/
+.env
+.venv_common/
+
+# =========================
+# PyCharm / IDEs
+# =========================
+.idea/
+*.iml
+
+# =========================
+# OS Files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Jupyter / AI Artifacts
+# =========================
+.ipynb_checkpoints/
+*.ipynb
+models/
+checkpoints/
+runs/
+wandb/
+
+# =========================
+# Logs & Outputs
+# =========================
+*.log
+logs/
+outputs/
+results/
+
+# =========================
+# Local Data / Inputs
+# =========================
+data/
+input.html
+*.html
+*.json
+
+# =========================
+# dotenv secrets
+# =========================
+.env
+.env.*
